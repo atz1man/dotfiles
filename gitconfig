@@ -54,4 +54,9 @@
   defaultBranch = master
 [user]
 	email = ao.osman12@gmail.com
-	name = ahmed osman
+	name = Ahmed Osmna
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
